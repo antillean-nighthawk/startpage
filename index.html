@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body onload="displayDate()">
+    <header>
+        <h1 id="current-date"></h1>
+    </header>
+
+    <main>
+        <!--https://github.com/3r3bu5x9/Prismatic-Night/tree/master-->
+        <!-- https://ddg.patdryburgh.com/ -->
+        <form method="get" id="ddg-search" action="https://duckduckgo.com/">
+            <input type="hidden" name="kae" value="d" />
+            <input type="hidden" name="k7" value="272E33" />
+            <input type="hidden" name="k8" value="D3C6AA" />
+            <input type="hidden" name="k9" value="A7C080" />
+            <input type="hidden" name="kx" value="E69875" />
+            <input type="hidden" name="kj" value="3C4841" />
+            <input type="hidden" name="kaa" value="D699B6" />
+            <input id="input-box" type="text" name="q" placeholder="Search…" aria-label="Search on DuckDuckGo" />
+            <button type="submit">
+                <img src="imgs/duck.svg" style="cursor:pointer" />
+            </button>
+        </form>
+
+        <div class="bm">
+            <div class="category">
+                <h2 class="bookmark-group-header">Popular Sites</h2>
+                <div class="bookmarks" id="bm-popular">
+                    <li><a class="link" href="https://youtube.com">Youtube</a></li>
+                    <li><a class="link" href="https://reddit.com">Reddit</a></li>
+                    <li><a class="link" href="https://tumblr.com">Tumblr</a></li>
+                    <li><a class="link" href="https://chatgpt.com">ChatGPT</a></li>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2 class="bookmark-group-header">Fun</h2>
+                <div class="bookmarks" id="bm-fun">
+                    <li><a class="link" href="https://catfishing.net">Catfishing</a></li>
+                    <li><a class="link" href="https://neocities.org/browse">Neocities</a></li>
+                    <li><a class="link" href="https://monkeytype.com/">Monkeytype</a></li>
+                    <li><a class="link" href="https://lichess.org/">Lichess</a></li>
+                    <li><a class="link" href="https://www.fallenlondon.com">Fallen London</a></li>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2 class="bookmark-group-header">Computer</h2>
+                <div class="bookmarks" id="bm-computer">
+                    <li><a class="link" href="https://tldr.inbrowser.app/">TLDR Pages</a></li>
+                    <li><a class="link" href="https://ctftime.org/">CTF Time</a></li>
+                    <li><a class="link" href="https://tryhackme.com/">TryHackMe</a></li>
+                    <li><a class="link" href="https://translate.google.com/">Google Translate</a></li>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2 class="bookmark-group-header">Ahoy Matey</h2>
+                <div class="bookmarks" id="bm-ahoy">
+                    <li><a class="link" href="https://theindex.moe/library/anime">Anidex</a></li>
+                    <li><a class="link" href="https://mangago.me/">Mangago</a></li>
+                    <li><a class="link" href="https://libgen.is/">Libgen</a></li>
+                    <li><a class="link" href="https://z-library.sk/">Z-lib</a></li>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

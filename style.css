@@ -1,0 +1,115 @@
+html {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url("./imgs/IMG_1898.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 66px;
+    color: #F8F5E4;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: none;
+    position: fixed;
+    padding-left: 11px;
+    padding-right: 12px;
+    height: 70px;
+}
+
+#bm-popular a {
+    color: #DBBC7F;
+}
+
+#bm-fun a {
+    color: #7FBBB3;
+}
+
+#bm-computer a {
+    color: #D699B6;
+}
+
+#bm-ahoy a {
+    color: #E67E80;
+}
+
+#input-box {
+    border: none;
+    outline: none;
+    background: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: gray;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+}
+
+#ddg-search {
+    display: flex;
+    background-color: rgba(39, 46, 51, 0.8);
+    width: 600px;
+    padding: 0px;
+    margin-bottom: 40px;
+    border-radius: 50px;
+    align-self: center;
+    height: 70px;
+    padding: 5px;
+}
+
+.bm {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.category {
+    color: #D3C6AA;
+    display: flex;
+    background-color: rgba(39, 46, 51, 0.8);
+    border-radius: 3px;
+    flex-direction: column;
+    width: 150px;
+    margin: 10px;
+}
+
+.bookmarks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
