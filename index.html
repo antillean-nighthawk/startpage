@@ -18,21 +18,30 @@
     </header>
 
     <main>
-        <!--https://github.com/3r3bu5x9/Prismatic-Night/tree/master-->
-        <!-- https://ddg.patdryburgh.com/ -->
-        <form method="get" id="ddg-search" action="https://duckduckgo.com/">
-            <input type="hidden" name="kae" value="d" />
-            <input type="hidden" name="k7" value="272E33" />
-            <input type="hidden" name="k8" value="D3C6AA" />
-            <input type="hidden" name="k9" value="A7C080" />
-            <input type="hidden" name="kx" value="E69875" />
-            <input type="hidden" name="kj" value="3C4841" />
-            <input type="hidden" name="kaa" value="D699B6" />
-            <input id="input-box" type="text" name="q" placeholder="Search…" aria-label="Search on DuckDuckGo" />
-            <button type="submit">
-                <img src="imgs/duck.svg" style="cursor:pointer" />
-            </button>
-        </form>
+        <div class="search-box">
+            <!--https://github.com/3r3bu5x9/Prismatic-Night/tree/master-->
+            <!-- https://ddg.patdryburgh.com/ -->
+            <img class="engine" id="engine-logo" src="imgs/duck.svg" onclick="toggleEngine()" style="cursor:pointer" />
+
+            <form method="get" id="ddg-search" action="https://duckduckgo.com/">
+                <input type="hidden" name="kae" value="d" />
+                <input type="hidden" name="k7" value="272E33" />
+                <input type="hidden" name="k8" value="D3C6AA" />
+                <input type="hidden" name="k9" value="A7C080" />
+                <input type="hidden" name="kx" value="E69875" />
+                <input type="hidden" name="kj" value="3C4841" />
+                <input type="hidden" name="kaa" value="D699B6" />
+                <input class="input-box" type="text" name="q" placeholder="Search with DuckDuckGo..."
+                    aria-label="Search on DuckDuckGo" autofocus />
+                <input type="submit" hidden>
+            </form>
+
+            <form method="get" id="google-search" action="https://google.com/search" style="display: none;">
+                <input class="input-box" type="text" name="q" placeholder="Search with Google..."
+                    aria-label="Search with Google" />
+                <input type="submit" hidden>
+            </form>
+        </div>
 
         <div class="bm">
             <div class="category">
@@ -40,6 +49,7 @@
                 <div class="bookmarks" id="bm-popular">
                     <li><a class="link" href="https://youtube.com">Youtube</a></li>
                     <li><a class="link" href="https://reddit.com">Reddit</a></li>
+                    <li><a class="link" href="https://pinterest.com">Pinterest</a></li>
                     <li><a class="link" href="https://tumblr.com">Tumblr</a></li>
                     <li><a class="link" href="https://chatgpt.com">ChatGPT</a></li>
                 </div>
@@ -59,10 +69,11 @@
             <div class="category">
                 <h2 class="bookmark-group-header">Computer</h2>
                 <div class="bookmarks" id="bm-computer">
-                    <li><a class="link" href="https://tldr.inbrowser.app/">TLDR Pages</a></li>
                     <li><a class="link" href="https://ctftime.org/">CTF Time</a></li>
                     <li><a class="link" href="https://tryhackme.com/">TryHackMe</a></li>
-                    <li><a class="link" href="https://translate.google.com/">Google Translate</a></li>
+                    <li><a class="link" href="https://dfirdiva.com/">DFIR Diva</a></li>
+                    <li><a class="link" href="https://github.com/">Github</a></li>
+                    <li><a class="link" href="https://hackernoon.com/tagged/cybersecurity">HackerNoon</a></li>
                 </div>
             </div>
 
@@ -73,6 +84,18 @@
                     <li><a class="link" href="https://mangago.me/">Mangago</a></li>
                     <li><a class="link" href="https://libgen.is/">Libgen</a></li>
                     <li><a class="link" href="https://z-library.sk/">Z-lib</a></li>
+                    <li><a class="link" href="https://zoechip.cc">Zoechip</a></li>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2 class="bookmark-group-header">Tools</h2>
+                <div class="bookmarks" id="bm-tools">
+                    <li><a class="link" href="https://generator.email/">Email Generator</a></li>
+                    <li><a class="link" href="https://steamdb.info/">SteamDB</a></li>
+                    <li><a class="link" href="https://translate.google.com/">Google Translate</a></li>
+                    <li><a class="link" href="https://github.com/sainnhe/everforest">Everforest</a></li>
+                    <li><a class="link" href="https://tldr.inbrowser.app/">TLDR Pages</a></li>
                 </div>
             </div>
         </div>

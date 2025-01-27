@@ -43,10 +43,9 @@ a {
     text-decoration: none;
 }
 
-button {
+img {
     background: none;
     border: none;
-    position: fixed;
     padding-left: 11px;
     padding-right: 12px;
     height: 70px;
@@ -68,27 +67,29 @@ button {
     color: #E67E80;
 }
 
-#input-box {
+#bm-tools a {
+    color: #83C092;
+}
+
+.input-box {
     border: none;
     outline: none;
     background: none;
-    padding-right: 15px;
-    padding-left: 15px;
-    color: gray;
+    color: #D3C6AA;
     font-size: 22px;
-    text-align: center;
+    text-align: left;
     width: 100%;
+    height: 100%;
 }
 
-#ddg-search {
+.search-box {
     display: flex;
+    align-items: stretch;
     background-color: rgba(39, 46, 51, 0.8);
     width: 600px;
-    padding: 0px;
     margin-bottom: 40px;
     border-radius: 50px;
     align-self: center;
-    height: 70px;
     padding: 5px;
 }
 
@@ -111,5 +112,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: -20px;
 }
